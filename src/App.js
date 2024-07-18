@@ -4,6 +4,7 @@ import './index.css'
 import Hero from './Components/Hero/Hero.js'
 import About from './Components/About/About.js'
 import Services from './Components/Services/Services.js'
+import MyWork from './Components/MyWork/MyWork.js'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Hero />
       <About/>
       <Services/>
+      <MyWork/>
     </div>
   )
 }

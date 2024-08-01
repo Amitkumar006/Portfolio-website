@@ -2,7 +2,7 @@ import React from 'react';
 import './Hero.css';
 import Profile_img from '../../assets/profile image.png';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import ReactTypingEffect from 'react-typing-effect';
+import Typewriter from 'typewriter-effect';
 
 const Hero = (props) => {
 
@@ -10,11 +10,14 @@ const Hero = (props) => {
         <div id='home' className='hero'>
             <img src={Profile_img} alt="Profile image" />
             <div className='container-typing'>
-                <ReactTypingEffect
-                    text={[`Hi, My name is Amit Kumar.`,`I am a Web Developer.`]}
-                    speed={50}
-                    eraseSpeed={40}
-                    eraseDelay={1000}
+                <Typewriter
+                    options={{
+                        strings: ['Hi, My name is Amit Kumar.', 'I am a Web Developer.'],
+                        autoStart: true,
+                        loop: true,
+                        delay : 100,
+                        cursor : '|'
+                    }}
                 />
             </div>
             <p>
@@ -27,7 +30,7 @@ const Hero = (props) => {
                     </AnchorLink>
                 </div>
                 <div className="hero-resume" onClick={props.handleClick}>
-                    {props.isPdfVisible=== true ? 'Close Resume' : 'My Resume'}
+                    {props.isPdfVisible === true ? 'Close Resume' : 'My Resume'}
                 </div>
             </div>
         </div>

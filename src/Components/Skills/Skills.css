@@ -1,110 +1,69 @@
-.about {
+.skills{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 120px;
-    margin: 240px 170px;
+    gap: 80px;
+    margin: 80px 170px;
 }
 
-.about-title {
+.skills-title{
     position: relative;
 }
 
-.about-title h1 {
+.skills-title h1{
     padding: 0 30px;
     font-size: 80px;
     font-weight: 600;
 }
 
-.about-title img {
+.skills-title img{
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: -1;
 }
 
-/* .about-sections {
+.skills-sections {
     display: flex;
     gap: 80px;
-} */
+}
 
-.about-right {
+.skills-left{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+    gap: 50px;
 }
 
-.about-left img {
+.skills-right img{
     border-radius: 100px;
-
 }
 
-.linkdin {
-    padding: 10px 40px;
-    border: 3px solid blue;
-    background:white;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(10px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    color: #333;
-}
-
-.about-right .linkdin-button{
-  display: flex;
-  width: 100%;
-}
-.about-right .linkdin-button a{
-    position: relative;
-    left: 200px;
-  }
-
-.linkdin img{
-    width: 100px;
-}
-.linkdin:hover{
-    background: linear-gradient(270deg, #DF8908 -5.09%, #B415FF 106.28%);
-}
-
-/* .linkdin-background:hover{
-  background-color: blue;
-} */
-
-.about-para {
+.skills-para{
     display: flex;
     gap: 20px;
     flex-direction: column;
     font-size: 24px;
     font-weight: 500;
-    width: 70%;
 }
-
-.about-skills {
+.skills-skills{
     display: flex;
     gap: 20px;
     flex-direction: column;
 }
-
-.about-skill {
+.skills-skill{
     display: flex;
     align-items: center;
     gap: 50px;
     transition: 0.3s;
 }
 
-.about-skill p {
+.skills-skill p{
     min-width: 170px;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 700;
 }
-
-.about-skill hr {
+.skills-skill hr{
     outline: none;
     border: none;
     /* width: 50%; */
@@ -113,22 +72,20 @@
     background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
 }
 
-.about-achievements {
+.skills-achievements{
     display: flex;
     justify-content: space-around;
     margin-bottom: 80px;
     width: 100%;
 }
-
-.about-achievement {
+.skills-achievement{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     transition: 0.5s;
 }
-
-.about-achievement h1 {
+.skills-achievement h1{
     font-size: 60px;
     font-weight: 700;
     background: linear-gradient(264deg, #DF8908 50.41%, #B415FF 90.25%);
@@ -136,132 +93,100 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-.about-achievement p {
+.skills-achievement p{
     font-size: 22px;
     font-weight: 500;
 }
 
-.about-skill:hover {
+.skills-skill:hover{
     transform: scale(1.05);
     transition: 0.3s;
 }
-
-.about-achievement:hover {
+.skills-achievement:hover{
     transform: scale(1.12);
     transition: 0.5s;
 }
 
 /* 1300px */
-@media(max-width:1300px) {
-    .about {
+@media(max-width:1300px){
+    .skills{
         gap: 50px 0;
-        margin: 50px 30px;
+        margin: 50px 70px;
     }
-
-    .about-right {
+    .skills-left{
         gap: 20px;
     }
-
-    .about-left img {
-        display: none;
-    }
-
-    .about-skill p {
+    .skills-right img{
+        display: none;    }
+    .skills-skill p{
         font-size: 17px;
 
     }
-
-    .about-skill p {
+    .skills-skill p{
         font-size: 20px;
 
     }
-
-    .about-skill hr {
+    .skills-skill hr{
         height: 6px;
     }
-
-    .about-achievements {
+    .skills-achievements{
         width: 90%;
+        gap: 10px;
     }
-
+    
 }
 
 /* 770px */
 
-@media(max-width:770px) {
-    .about {
+@media(max-width:770px){
+    .skills{
         gap: 50px;
         margin: 50px 70px;
         align-items: start;
     }
-
-    .about-title h1 {
-        font-size: 50px;
-        padding: 0;
+    .skills-title h1{
+      font-size: 50px;
+      padding: 0;
     }
-
-    .about-title img {
+    .skills-title img{
         width: 130px;
         right: -20px;
     }
-
-    .about-sections {
+    .skills-sections{
         flex-direction: column;
     }
-
-    .about-left {
+    .skills-right{
         display: none;
     }
-
-    .about-para {
+    .skills-para{
         font-size: 18px;
         line-height: 32px;
     }
-
-    .about-skill {
-        gap: 20px;
-        align-items: center;
+    .skills-skill{
+       gap: 20px;
+       align-items: center;
     }
-
-    .about-skill p {
+    .skills-skill p{
         font-size: 10px;
         min-width: 50px;
 
     }
-
-    /* .about-skill hr{
+    .skills-skill hr{
         height: 6px;
-    } */
-    .about-achievements {
+    }
+    .skills-achievements{
         justify-content: space-between;
     }
-
-    .about-achievement {
+    .skills-achievement{
         gap: 10px;
 
     }
-
-    .about-achievement h1 {
+    .skills-achievement h1{
         font-size: 34px;
         font-weight: 700;
     }
-
-    .about-achievement p {
+    .skills-achievement p{
         text-align: center;
         font-size: 16px;
-    }
-
-    .show-more {
-        width: 200px;
-        gap: 10px;
-        font-size: 15px;
-        padding: 10px 20px;
-
-    }
-
-    .show-more img {
-        width: 20px;
-
     }
 }

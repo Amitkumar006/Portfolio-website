@@ -2,28 +2,37 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 35px;
+    gap: 45px;
 }
 
 .hero img{
-    margin-top: 80px;
+    margin-top: 150px;
     width: 220px;
 }
 
-.hero h1{
+.container-typing{
     text-align: center;
     font-size: 60px;
     font-weight: 600;
-    width: 70%;
-
+    /* width: 70%; */ 
+    /* /* min-height: 50%;  */
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateZ(0);
 }
 
-.hero h1 span{
+/* .container-typing [text]{
+    min-height: 100px;
+} */
+/* 
+.hero h1 ReactTypingEffect{
     background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
     background-clip: text;
     /* -webkit-background-clip: text; */
-    -webkit-text-fill-color: transparent;
-}
+    /* -webkit-text-fill-color: transparent; */
+/* }  */
 
 .hero p{
     text-align: center;
@@ -64,3 +73,37 @@
 .hero-resume:hover{
     border-color: #B415FF;
 }
+
+ @media(max-width:770px){
+    .hero img{
+        margin-top: 120px;
+    width: 260px;
+    }
+    .hero h1{
+        margin-top: 50px;
+        width: 90%;
+        font-size: 30px;
+    }
+    .hero p{
+        width: 60%;
+        font-size: 18px;
+        line-height: 32px;
+        margin: 10px 0;
+    }
+    .hero-action{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+    .hero-connect{
+     padding: 20px 30px;
+     border-radius: 40px;
+    }
+    .hero-resume{
+        padding: 20px 50px;
+        border-radius: 40px;
+    }
+} 

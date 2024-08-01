@@ -1,7 +1,7 @@
 import project1_img from '../assets/spotify.png'
 import project2_img from '../assets/text-utiles.png'
 import project3_img from '../assets/news-website.png'
-import project4_img from '../assets/project_4.svg'
+import project4_img from '../assets/portfolio.png'
 import project5_img from '../assets/project_5.svg'
 import project6_img from '../assets/project_6.svg'
 

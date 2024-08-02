@@ -1,0 +1,29 @@
+/* ScrollToTop.css */
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    background-color: #007bff; /* Blue background color */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Circular button */
+    width: 40px; /* Size of the button */
+    height: 40px; /* Size of the button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(237, 234, 234, 0.489); /* Shadow effect */
+    font-size: 18px; /* Size of the icon */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+}
+
+.scroll-to-top.show {
+    opacity: 1; /* Show button when scrolled */
+}
+
+.scroll-to-top:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}

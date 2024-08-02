@@ -81,7 +81,7 @@
     }
     .nav-connect {
      font-size: 18px;
-     padding: 10px 20px;
+     padding: 10px 15px;
     }
     .logo h1{
         font-size: 22px;
@@ -90,32 +90,30 @@
     .logo img{
         width: 70px;
     }
-}
-
-/* 1000 */
-
-@media(max-width:1000px){
-    .navbar {
-        margin: 15px 30px;
-    }
     .nav-menu{
         gap: 30px;
         font-size: 18px;
     }
-    .nav-connect {
+}
+
+@media(max-width : 1000px){
+    .nav-menu{
+        gap: 20px;
         font-size: 15px;
-        padding: 10px 20px;
+    }
+    .nav-connect {
+        font-size: 12px;
+        padding: 8px 10px;
        }
 }
 
 
-/* 770px  */
+/* 800px  */
 
 @media(max-width:800px) {
     .navbar {
-        margin: 20px 50px;
+        margin: 20px 10px;
     }
-
     .nav-connect {
         display: none;
     }

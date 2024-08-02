@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import footer_img from '../../assets/footer_logo.svg'
+import theme_img from '../../assets/theme_pattern.svg'
 import user_icon from '../../assets/user_icon.svg'
 
 const Footer = () => {
@@ -8,7 +8,10 @@ const Footer = () => {
     <div className='footer'>
       <div className="footer-top">
         <div className="footer-top-left">
-            <img src={footer_img} alt="Footer image" />
+        <div className="footer-title">
+                <h1>Amit Kumar</h1>
+                <img src={theme_img} alt="Theme image" />
+            </div>
             <p>Thank you for visiting my portfolio! Let's stay connected. For inquiries or collaborations, don't hesitate to reach out.</p>
         </div>
         <div className="footer-top-right">

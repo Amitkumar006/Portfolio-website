@@ -112,9 +112,22 @@
     .skills{
         gap: 50px 0;
         margin: 50px 70px;
+        
     }
+
+    .skills-title h1{
+        padding: 0 30px;
+        font-size: 60px;
+        font-weight: 500;
+    }
+    
+    .skills-title img{
+        width: 170px;
+    }
+
     .skills-left{
         gap: 20px;
+        
     }
     .skills-right img{
         display: none;    }
@@ -141,15 +154,15 @@
 @media(max-width:770px){
     .skills{
         gap: 50px;
-        margin: 50px 70px;
-        align-items: start;
+        margin: 50px 10px;
+        align-items: center;
     }
     .skills-title h1{
-      font-size: 50px;
+      font-size: 30px;
       padding: 0;
     }
     .skills-title img{
-        width: 130px;
+        width: 80px;
         right: -20px;
     }
     .skills-sections{
@@ -176,17 +189,19 @@
     }
     .skills-achievements{
         justify-content: space-between;
+        flex-direction: column;
     }
     .skills-achievement{
         gap: 10px;
 
     }
     .skills-achievement h1{
-        font-size: 34px;
-        font-weight: 700;
+        font-size: 30px;
+        font-weight: 500;
     }
     .skills-achievement p{
         text-align: center;
-        font-size: 16px;
+        font-size: 15px;
+        font-weight: 300;
     }
 }

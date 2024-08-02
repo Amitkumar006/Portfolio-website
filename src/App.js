@@ -9,6 +9,7 @@ import MyWork from './Components/MyWork/MyWork.js';
 import Contact from './Components/Contact/Contact.js';
 import Footer from './Components/Footer/Footer.js';
 import PdfView from './Components/PdfView/PdfView.js';
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop.js';
 
 const App = () => {  
   const [isPdfVisible, setIsPdfVisible] = useState(false);
@@ -24,6 +25,7 @@ const App = () => {
 
   return (
     <>
+    <ScrollToTop />
       <Navbar />
       <Hero handleClick={handlePdf} isPdfVisible={isPdfVisible} />
       {isPdfVisible && (

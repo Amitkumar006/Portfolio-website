@@ -5,6 +5,25 @@
     gap: 30px;
 }
 
+.footer-title{
+    position: relative;
+
+}
+
+.footer-title h1{
+    padding: 0px 30px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.footer-title img{
+    position: absolute;
+    bottom: 0;
+    right: 90px;
+    z-index: -1;
+    width: 130px;
+}
+
 .footer-top{
     display: flex;
     justify-content: space-between;
@@ -13,6 +32,7 @@
 .footer-top-left p{
    max-width: 400px;
    font-size: 20px;
+   margin-top: 20px;
 }
 
 .footer-top-right{
@@ -69,11 +89,29 @@
     transition: 0.3s;
 }
 
+/* 1300px */
+
 @media(max-width:1300px){
     .footer{
         margin: 50px 100px;
 
     }
+
+    .footer-title{
+        width: 230px;
+    }
+
+    .footer-title h1{
+        padding: 0px 20px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    
+    .footer-title img{
+        right: 40px;
+        width: 80px;
+    }
+
     .footer-email-input{
         padding: 10px 15px;
     }
@@ -87,36 +125,73 @@
         gap: 10px;
         align-items: center;
     }
+    .footer-bottom-right{
+        gap: 15px;
+    }
 }
 
 @media(max-width:770px){
     .footer{
-        margin: 50px 70px;
+        margin: 50px 10px;
+       
     }
+
+    .footer-title h1{
+        padding: 0px 20px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    
+    .footer-title img{
+        right: 40px;
+        width: 80px;
+    }
+
     .footer-top{
         flex-direction: column;
-        gap: 50px;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
     }
+
+    .footer-top-left p{
+        max-width: 700px;
+        font-size: 18px;
+        font-weight: 400;
+     }
+
     .footer-bottom{
         display: flex;
         flex-direction: column;
         margin-bottom: 50px;
+        
     }
     .footer-top-right{
         display: flex;
         flex-direction: column;
+        
     }
     .footer-email-input{
         gap: 15px;
-        padding: 10px 15px ;
-        padding-right: 40px;
+        padding: 10px 5px ;
+        padding-right: 0px;
     }
     .footer-subscribe{
-        padding: 15px 50px;
+        padding: 10px 30px;
      border-radius: 40px;
     }
 
     .footer-bottom{
         gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-bottom-right{
+        flex-direction: column;
+        gap: 20px;
+        font-size: 17px;
+    }
+    .footer-bottom-left{
+        font-size: 17px;
     }
 }

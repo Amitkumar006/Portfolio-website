@@ -58,10 +58,11 @@
 
 .about-right .linkdin-button{
   display: flex;
-  width: 100%;
+  /* width: 100%; */
+  /* justify-content: flex-start; */
 }
 .about-right .linkdin-button a{
-    position: relative;
+    /* position: relative; */
     left: 200px;
   }
 
@@ -72,9 +73,6 @@
     background: linear-gradient(270deg, #DF8908 -5.09%, #B415FF 106.28%);
 }
 
-/* .linkdin-background:hover{
-  background-color: blue;
-} */
 
 .about-para {
     display: flex;
@@ -158,6 +156,19 @@
         gap: 50px 0;
         margin: 50px 30px;
     }
+    .about-title h1 {
+        padding: 0 30px;
+        font-size: 60px;
+        font-weight: 500;
+    }
+    
+    .about-title img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        width: 170px;
+    }
 
     .about-right {
         gap: 20px;
@@ -187,23 +198,30 @@
 
 }
 
+/* 1000px */
+@media(max-width:1000px){
+    .about-para {
+        width: 90%;
+    }
+}
+
 /* 770px */
 
 @media(max-width:770px) {
     .about {
         gap: 50px;
-        margin: 50px 70px;
-        align-items: start;
+        margin: 50px 10px;
+        align-items: center;
     }
 
     .about-title h1 {
-        font-size: 50px;
+        font-size: 30px;
         padding: 0;
     }
 
     .about-title img {
-        width: 130px;
-        right: -20px;
+        width: 80px;
+        right: -10px;
     }
 
     .about-sections {
@@ -215,24 +233,31 @@
     }
 
     .about-para {
-        font-size: 18px;
-        line-height: 32px;
+        font-size: 15px;
+        line-height: 22px;
+        width: 80%;
     }
 
-    .about-skill {
-        gap: 20px;
+    .about-right {
         align-items: center;
     }
 
+    .about-skills{
+        width: 80%;
+    }
+    
+
+    .about-skill {
+        gap: 15px;
+        align-items: center;
+        width: 80%;
+        flex-wrap: wrap;
+    }
     .about-skill p {
-        font-size: 10px;
-        min-width: 50px;
+        font-size: 15px;
+        min-width: 0px;
 
     }
-
-    /* .about-skill hr{
-        height: 6px;
-    } */
     .about-achievements {
         justify-content: space-between;
     }
@@ -264,4 +289,11 @@
         width: 20px;
 
     }
+    .linkdin {
+        padding: 5px 20px;
+    }
+    .about-right .linkdin-button a{
+        left: 5px;
+      }
+    
 }
